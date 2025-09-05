@@ -1,0 +1,223 @@
+2025-09-05 12:13:54.163 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-05 12:13:54.190 | INFO     | __main__:<module>:68 - Project root: C:\Users\AnjanaD\Documents\buzzline-03-anjana
+2025-09-05 12:13:54.191 | INFO     | __main__:<module>:72 - Data folder: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data
+2025-09-05 12:13:54.194 | INFO     | __main__:<module>:76 - Data file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz.json
+2025-09-05 12:13:54.195 | INFO     | __main__:main:136 - START producer.
+2025-09-05 12:13:54.196 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-09-05 12:13:58.320 | ERROR    | utils.utils_producer:check_zookeeper_service_is_ready:82 - Error checking Zookeeper readiness: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-09-05 12:13:58.322 | ERROR    | utils.utils_producer:verify_services:114 - Zookeeper is not ready. Please check your Zookeeper setup. Exiting...
+2025-09-05 12:16:33.098 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-05 12:16:33.103 | INFO     | __main__:<module>:66 - Project root: C:\Users\AnjanaD\Documents\buzzline-03-anjana
+2025-09-05 12:16:33.104 | INFO     | __main__:<module>:70 - Data folder: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data
+2025-09-05 12:16:33.104 | INFO     | __main__:<module>:74 - Data file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\smoker_temps.csv
+2025-09-05 12:16:33.104 | INFO     | __main__:main:134 - START producer.
+2025-09-05 12:16:33.105 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-09-05 12:16:37.239 | ERROR    | utils.utils_producer:check_zookeeper_service_is_ready:82 - Error checking Zookeeper readiness: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-09-05 12:16:37.240 | ERROR    | utils.utils_producer:verify_services:114 - Zookeeper is not ready. Please check your Zookeeper setup. Exiting...
+2025-09-05 12:24:16.576 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-05 12:24:16.582 | INFO     | __main__:<module>:68 - Project root: C:\Users\AnjanaD\Documents\buzzline-03-anjana
+2025-09-05 12:24:16.583 | INFO     | __main__:<module>:72 - Data folder: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data
+2025-09-05 12:24:16.584 | INFO     | __main__:<module>:76 - Data file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz.json
+2025-09-05 12:24:16.584 | INFO     | __main__:main:136 - START producer.
+2025-09-05 12:24:16.585 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-09-05 12:24:16.599 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-09-05 12:24:16.601 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 12:24:18.605 | ERROR    | utils.utils_producer:check_kafka_service_is_ready:102 - Error checking Kafka: NoBrokersAvailable
+2025-09-05 12:24:18.605 | ERROR    | utils.utils_producer:verify_services:121 - Kafka broker is not ready. Please check your Kafka setup. Exiting...
+2025-09-05 12:27:23.937 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-05 12:27:23.942 | INFO     | __main__:<module>:68 - Project root: C:\Users\AnjanaD\Documents\buzzline-03-anjana
+2025-09-05 12:27:23.943 | INFO     | __main__:<module>:72 - Data folder: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data
+2025-09-05 12:27:23.944 | INFO     | __main__:<module>:76 - Data file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz.json
+2025-09-05 12:27:23.945 | INFO     | __main__:main:136 - START producer.
+2025-09-05 12:27:23.946 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-09-05 12:27:23.962 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-09-05 12:27:23.963 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 12:27:25.967 | ERROR    | utils.utils_producer:check_kafka_service_is_ready:102 - Error checking Kafka: NoBrokersAvailable
+2025-09-05 12:27:25.968 | ERROR    | utils.utils_producer:verify_services:121 - Kafka broker is not ready. Please check your Kafka setup. Exiting...
+2025-09-05 12:28:45.441 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-05 12:28:45.459 | INFO     | __main__:<module>:68 - Project root: C:\Users\AnjanaD\Documents\buzzline-03-anjana
+2025-09-05 12:28:45.461 | INFO     | __main__:<module>:72 - Data folder: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data
+2025-09-05 12:28:45.463 | INFO     | __main__:<module>:76 - Data file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz.json
+2025-09-05 12:28:45.464 | INFO     | __main__:main:136 - START producer.
+2025-09-05 12:28:45.465 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-09-05 12:28:45.474 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-09-05 12:28:45.475 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 12:28:45.550 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'yOTv1E1tRoy2WDJ5hd8qkg', 'controller_id': 1}
+2025-09-05 12:28:45.551 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-09-05 12:28:45.551 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-09-05 12:28:45.552 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 12:28:45.552 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-09-05 12:28:45.580 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-09-05 12:28:45.582 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 12:28:45.641 | INFO     | utils.utils_producer:create_kafka_topic:176 - Creating 'buzzline_json'.
+2025-09-05 12:28:45.743 | INFO     | utils.utils_producer:create_kafka_topic:181 - Topic 'buzzline_json' created successfully.
+2025-09-05 12:28:45.744 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-09-05 12:28:45.744 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-09-05 12:28:45.745 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz.json
+2025-09-05 12:28:45.755 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz.json
+2025-09-05 12:28:45.789 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-09-05 12:28:46.792 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-09-05 12:28:47.795 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-09-05 12:28:48.798 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-09-05 12:28:49.801 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-09-05 12:28:50.804 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-09-05 12:28:51.807 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-09-05 12:28:52.810 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-09-05 12:28:53.404 | WARNING  | __main__:main:173 - Producer interrupted by user.
+2025-09-05 12:28:53.405 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-09-05 12:28:53.406 | INFO     | __main__:main:180 - END producer.
+2025-09-05 12:34:53.786 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-05 12:34:53.794 | INFO     | __main__:main:124 - START consumer.
+2025-09-05 12:34:53.794 | INFO     | __main__:get_kafka_topic:46 - Kafka topic: buzzline_json
+2025-09-05 12:34:53.795 | INFO     | __main__:get_kafka_consumer_group_id:53 - Kafka consumer group id: buzz_group
+2025-09-05 12:34:53.796 | INFO     | __main__:main:129 - Consumer: Topic 'buzzline_json' and group 'buzz_group'...
+2025-09-05 12:34:53.796 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 12:34:53.797 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-09-05 12:34:53.833 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-09-05 12:34:53.834 | INFO     | __main__:main:135 - Polling messages from topic 'buzzline_json'...
+2025-09-05 12:35:00.104 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-09-05 12:35:00.104 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-09-05 12:35:00.104 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1}
+2025-09-05 12:35:00.105 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-09-05 12:35:00.106 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-09-05 12:35:00.106 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 1}
+2025-09-05 12:35:00.107 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-09-05 12:35:00.107 | INFO     | __main__:process_message:95 - Message received from author: Charlie
+2025-09-05 12:35:00.107 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 1, 'Charlie': 1}
+2025-09-05 12:35:00.109 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Data engineering is my passion.', 'author': 'Alice'}
+2025-09-05 12:35:00.110 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-09-05 12:35:00.111 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 2, 'Charlie': 1}
+2025-09-05 12:35:00.114 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Distributed systems are fascinating.', 'author': 'Diana'}
+2025-09-05 12:35:00.114 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-09-05 12:35:00.115 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 2, 'Charlie': 1, 'Diana': 1}
+2025-09-05 12:35:00.117 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Buzz messages for everyone.', 'author': 'Alice'}
+2025-09-05 12:35:00.118 | INFO     | __main__:process_message:95 - Message received from author: Alice
+2025-09-05 12:35:00.118 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 3, 'Charlie': 1, 'Diana': 1}
+2025-09-05 12:35:00.120 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'Hello, Kafka world!', 'author': 'Diana'}
+2025-09-05 12:35:00.121 | INFO     | __main__:process_message:95 - Message received from author: Diana
+2025-09-05 12:35:00.121 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 1, 'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-09-05 12:35:00.129 | INFO     | __main__:process_message:89 - Processed JSON message: {'message': 'This is a buzz message.', 'author': 'Eve'}
+2025-09-05 12:35:00.130 | INFO     | __main__:process_message:95 - Message received from author: Eve
+2025-09-05 12:35:00.131 | INFO     | __main__:process_message:101 - Updated author counts: {'Eve': 2, 'Alice': 3, 'Charlie': 1, 'Diana': 2}
+2025-09-05 12:35:02.253 | WARNING  | __main__:main:142 - Consumer interrupted by user.
+2025-09-05 12:35:02.329 | INFO     | __main__:main:147 - Kafka consumer for topic 'buzzline_json' closed.
+2025-09-05 12:35:02.330 | INFO     | __main__:main:149 - END consumer for topic 'buzzline_json' and group 'buzz_group'.
+2025-09-05 13:14:12.912 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-05 13:17:53.204 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-05 13:17:53.209 | INFO     | __main__:<module>:66 - Project root: C:\Users\AnjanaD\Documents\buzzline-03-anjana
+2025-09-05 13:17:53.209 | INFO     | __main__:<module>:70 - Data folder: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data
+2025-09-05 13:17:53.210 | INFO     | __main__:<module>:74 - Data file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\smoker_temps.csv
+2025-09-05 13:17:53.210 | INFO     | __main__:main:134 - START producer.
+2025-09-05 13:17:53.210 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-09-05 13:17:53.221 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-09-05 13:17:53.222 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 13:17:53.263 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'yOTv1E1tRoy2WDJ5hd8qkg', 'controller_id': 1}
+2025-09-05 13:17:53.265 | INFO     | __main__:get_kafka_topic:48 - Kafka topic: smoker_csv
+2025-09-05 13:17:53.267 | INFO     | __main__:get_message_interval:55 - Message interval: 5 seconds
+2025-09-05 13:17:53.267 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 13:17:53.272 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-09-05 13:17:53.292 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-09-05 13:17:53.294 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 13:17:53.346 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'smoker_csv' already exists. Clearing it out...
+2025-09-05 13:17:53.346 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 13:17:53.394 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'smoker_csv': list indices must be integers or slices, not ConfigResource
+2025-09-05 13:17:53.395 | INFO     | __main__:main:157 - Kafka topic 'smoker_csv' is ready.
+2025-09-05 13:17:53.399 | INFO     | __main__:main:163 - Starting message production to topic 'smoker_csv'...
+2025-09-05 13:17:53.399 | INFO     | __main__:generate_messages:93 - Opening data file in read mode: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\smoker_temps.csv
+2025-09-05 13:17:53.415 | INFO     | __main__:generate_messages:95 - Reading data from file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\smoker_temps.csv
+2025-09-05 13:17:53.437 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-09-05T17:17:53.416563', 'temperature': 70.4}
+2025-09-05 13:17:58.439 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-09-05T17:17:58.439599', 'temperature': 70.8}
+2025-09-05 13:18:03.443 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-09-05T17:18:03.442597', 'temperature': 71.2}
+2025-09-05 13:18:08.445 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-09-05T17:18:08.444564', 'temperature': 71.6}
+2025-09-05 13:18:13.448 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-09-05T17:18:13.447599', 'temperature': 72.0}
+2025-09-05 13:18:18.451 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-09-05T17:18:18.450600', 'temperature': 72.4}
+2025-09-05 13:18:23.019 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-05 13:18:23.025 | INFO     | __main__:main:162 - START consumer.
+2025-09-05 13:18:23.026 | INFO     | __main__:get_kafka_topic:46 - Kafka topic: smoker_csv
+2025-09-05 13:18:23.026 | INFO     | __main__:get_kafka_consumer_group_id:53 - Kafka consumer group id: smoker_group
+2025-09-05 13:18:23.026 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:18:23.027 | INFO     | __main__:main:168 - Consumer: Topic 'smoker_csv' and group 'smoker_group'...
+2025-09-05 13:18:23.027 | INFO     | __main__:main:169 - Rolling window size: 10
+2025-09-05 13:18:23.027 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 13:18:23.027 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='smoker_csv' and group ID='smoker_group'.
+2025-09-05 13:18:23.053 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-09-05 13:18:23.055 | INFO     | __main__:main:177 - Polling messages from topic 'smoker_csv'...
+2025-09-05 13:18:23.454 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-09-05T17:18:23.453592', 'temperature': 72.8}
+2025-09-05 13:18:26.455 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-09-05T17:17:53.416563', 'temperature': 70.4}
+2025-09-05 13:18:26.456 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:18:26.457 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-09-05T17:17:58.439599', 'temperature': 70.8}
+2025-09-05 13:18:26.458 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:18:26.460 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-09-05T17:18:03.442597', 'temperature': 71.2}
+2025-09-05 13:18:26.460 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:18:26.463 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-09-05T17:18:08.444564', 'temperature': 71.6}
+2025-09-05 13:18:26.463 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:18:26.465 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-09-05T17:18:13.447599', 'temperature': 72.0}
+2025-09-05 13:18:26.468 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:18:26.470 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-09-05T17:18:18.450600', 'temperature': 72.4}
+2025-09-05 13:18:26.471 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:18:26.473 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-09-05T17:18:23.453592', 'temperature': 72.8}
+2025-09-05 13:18:26.473 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:18:28.181 | WARNING  | __main__:main:170 - Producer interrupted by user.
+2025-09-05 13:18:28.183 | INFO     | __main__:main:175 - Kafka producer closed.
+2025-09-05 13:18:28.184 | INFO     | __main__:main:177 - END producer.
+2025-09-05 13:18:36.002 | WARNING  | __main__:main:184 - Consumer interrupted by user.
+2025-09-05 13:18:36.009 | INFO     | __main__:main:189 - Kafka consumer for topic 'smoker_csv' closed.
+2025-09-05 13:20:32.529 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-05 13:20:32.537 | INFO     | __main__:main:162 - START consumer.
+2025-09-05 13:20:32.538 | INFO     | __main__:get_kafka_topic:46 - Kafka topic: smoker_csv
+2025-09-05 13:20:32.538 | INFO     | __main__:get_kafka_consumer_group_id:53 - Kafka consumer group id: smoker_group
+2025-09-05 13:20:32.539 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:20:32.540 | INFO     | __main__:main:168 - Consumer: Topic 'smoker_csv' and group 'smoker_group'...
+2025-09-05 13:20:32.541 | INFO     | __main__:main:169 - Rolling window size: 10
+2025-09-05 13:20:32.542 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 13:20:32.542 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='smoker_csv' and group ID='smoker_group'.
+2025-09-05 13:20:32.584 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-09-05 13:20:32.585 | INFO     | __main__:main:177 - Polling messages from topic 'smoker_csv'...
+2025-09-05 13:21:11.545 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-05 13:21:11.549 | INFO     | __main__:<module>:66 - Project root: C:\Users\AnjanaD\Documents\buzzline-03-anjana
+2025-09-05 13:21:11.550 | INFO     | __main__:<module>:70 - Data folder: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data
+2025-09-05 13:21:11.550 | INFO     | __main__:<module>:74 - Data file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\smoker_temps.csv
+2025-09-05 13:21:11.551 | INFO     | __main__:main:134 - START producer.
+2025-09-05 13:21:11.551 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-09-05 13:21:11.562 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-09-05 13:21:11.565 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 13:21:11.622 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'yOTv1E1tRoy2WDJ5hd8qkg', 'controller_id': 1}
+2025-09-05 13:21:11.623 | INFO     | __main__:get_kafka_topic:48 - Kafka topic: smoker_csv
+2025-09-05 13:21:11.624 | INFO     | __main__:get_message_interval:55 - Message interval: 5 seconds
+2025-09-05 13:21:11.624 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 13:21:11.625 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-09-05 13:21:11.642 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-09-05 13:21:11.642 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 13:21:11.687 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'smoker_csv' already exists. Clearing it out...
+2025-09-05 13:21:11.688 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-05 13:21:11.716 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'smoker_csv': list indices must be integers or slices, not ConfigResource
+2025-09-05 13:21:11.719 | INFO     | __main__:main:157 - Kafka topic 'smoker_csv' is ready.
+2025-09-05 13:21:11.720 | INFO     | __main__:main:163 - Starting message production to topic 'smoker_csv'...
+2025-09-05 13:21:11.720 | INFO     | __main__:generate_messages:93 - Opening data file in read mode: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\smoker_temps.csv
+2025-09-05 13:21:11.721 | INFO     | __main__:generate_messages:95 - Reading data from file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\smoker_temps.csv
+2025-09-05 13:21:11.783 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-09-05T17:21:11.721563', 'temperature': 70.4}
+2025-09-05 13:21:11.788 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-09-05T17:21:11.721563', 'temperature': 70.4}
+2025-09-05 13:21:11.789 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:21:16.786 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-09-05T17:21:16.785562', 'temperature': 70.8}
+2025-09-05 13:21:16.793 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-09-05T17:21:16.785562', 'temperature': 70.8}
+2025-09-05 13:21:16.794 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:21:21.790 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-09-05T17:21:21.789564', 'temperature': 71.2}
+2025-09-05 13:21:21.795 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-09-05T17:21:21.789564', 'temperature': 71.2}
+2025-09-05 13:21:21.796 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:21:26.793 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-09-05T17:21:26.792562', 'temperature': 71.6}
+2025-09-05 13:21:26.797 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-09-05T17:21:26.792562', 'temperature': 71.6}
+2025-09-05 13:21:26.799 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:21:31.798 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-09-05T17:21:31.797592', 'temperature': 72.0}
+2025-09-05 13:21:31.802 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-09-05T17:21:31.797592', 'temperature': 72.0}
+2025-09-05 13:21:31.802 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:21:36.800 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-09-05T17:21:36.799592', 'temperature': 72.4}
+2025-09-05 13:21:36.808 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-09-05T17:21:36.799592', 'temperature': 72.4}
+2025-09-05 13:21:36.809 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:21:41.803 | INFO     | __main__:main:167 - Sent message to topic 'smoker_csv': {'timestamp': '2025-09-05T17:21:41.802597', 'temperature': 72.8}
+2025-09-05 13:21:41.807 | INFO     | __main__:process_message:127 - Processed JSON message: {'timestamp': '2025-09-05T17:21:41.802597', 'temperature': 72.8}
+2025-09-05 13:21:41.808 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
+2025-09-05 13:21:46.446 | WARNING  | __main__:main:170 - Producer interrupted by user.
+2025-09-05 13:21:46.448 | INFO     | __main__:main:175 - Kafka producer closed.
+2025-09-05 13:21:46.449 | INFO     | __main__:main:177 - END producer.
+2025-09-05 13:21:53.984 | WARNING  | __main__:main:184 - Consumer interrupted by user.
+2025-09-05 13:21:53.992 | INFO     | __main__:main:189 - Kafka consumer for topic 'smoker_csv' closed.
