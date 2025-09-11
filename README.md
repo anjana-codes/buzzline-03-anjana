@@ -1,4 +1,4 @@
-# buzzline-03-case
+# P3: CSV and JSON Streaming Pipelines
 
 Streaming data does not have to be simple text.
 Many of us are familiar with streaming video content and audio (e.g. music) files.
@@ -8,6 +8,24 @@ semi-structured (e.g. json data).
 
 We'll work with two different types of data, and so we'll use two different Kafka topic names.
 See [.env](.env).
+
+### Name: Anjana Dhakal, 09/11/2025
+## Overview
+Read https://github.com/denisecase/buzzline-03-caseLinks to an external site.
+
+In this project, you will customize the example by:
+
+1. Adding your own unique JSON Kafka producer and JSON Kafka consumer scripts.
+2. Adding your own unique CSV Kafka producer and the associated (CSV) Kafka consumer scripts. We'll still call it the CSV consumer, even if  we pull the information off the topic as JSON instead of CSV. 
+3. Updating the README.md with clear instructions to run your custom scripts.
+
+## Objectives
+
+1. Understand Kafka producers that send messages based on JSON and CSV data. 
+2. Modify producers and consumers for real-time data streaming.
+3. Perform basic real-time analytics using Kafka to process the data that was originally in JSON or CSV format.
+4. Practice exploring different tools and see how they work and what you think. 
+
 
 ## First, Use Tools from Module 1 and 2
 
