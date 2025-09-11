@@ -19,7 +19,7 @@ import pandas as pd
 
 logging.basicConfig(
     level=logging.DEBUG,
-    filename="csv_consumer_anjana_loop.log",
+    filename="csv_consumer_anjana.log",
     filemode="w",
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
@@ -31,7 +31,7 @@ logger = logging.getLogger(__name__)
 
 KAFKA_BOOTSTRAP_SERVERS = 'localhost:9092'
 KAFKA_TOPIC = 'anjana_csv_topic'
-GROUP_ID = 'csv-group-anjana-loop'
+GROUP_ID = 'csv-group-anjana'
 
 consumer = KafkaConsumer(
     KAFKA_TOPIC,

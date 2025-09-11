@@ -1,5 +1,5 @@
 """
-json_consumer_anjana_loop.py
+json_consumer_anjana.py
 
 Continuously consumes JSON messages about Nepal from Kafka and performs real-time alerts.
 """
@@ -19,7 +19,7 @@ import pandas as pd
 
 logging.basicConfig(
     level=logging.DEBUG,
-    filename="json_consumer_anjana_loop.log",
+    filename="json_consumer_anjana.log",
     filemode="w",
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
@@ -31,7 +31,7 @@ logger = logging.getLogger(__name__)
 
 KAFKA_BOOTSTRAP_SERVERS = 'localhost:9092'
 KAFKA_TOPIC = 'anjana_json_topic'  # Must match the producer topic
-GROUP_ID = 'json-group-anjana-loop'
+GROUP_ID = 'json-group-anjana'
 
 #####################################
 # Create Kafka Consumer

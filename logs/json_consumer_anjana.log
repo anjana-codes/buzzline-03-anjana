@@ -1,0 +1,573 @@
+2025-09-11 13:57:02,889 - DEBUG - Added sensor with name connections-closed
+2025-09-11 13:57:02,889 - DEBUG - Added sensor with name connections-created
+2025-09-11 13:57:02,889 - DEBUG - Added sensor with name select-time
+2025-09-11 13:57:02,890 - DEBUG - Added sensor with name io-time
+2025-09-11 13:57:02,890 - DEBUG - Attempting to check version with node bootstrap-0
+2025-09-11 13:57:02,890 - DEBUG - Initiating connection to node bootstrap-0 at localhost:9092
+2025-09-11 13:57:02,890 - DEBUG - Added sensor with name bytes-sent-received
+2025-09-11 13:57:02,890 - DEBUG - Added sensor with name bytes-sent
+2025-09-11 13:57:02,890 - DEBUG - Added sensor with name bytes-received
+2025-09-11 13:57:02,890 - DEBUG - Added sensor with name request-latency
+2025-09-11 13:57:02,891 - DEBUG - Added sensor with name throttle-time
+2025-09-11 13:57:02,891 - DEBUG - Added sensor with name node-bootstrap-0.bytes-sent
+2025-09-11 13:57:02,891 - DEBUG - Added sensor with name node-bootstrap-0.bytes-received
+2025-09-11 13:57:02,891 - DEBUG - Added sensor with name node-bootstrap-0.latency
+2025-09-11 13:57:02,891 - DEBUG - Added sensor with name node-bootstrap-0.throttle
+2025-09-11 13:57:02,898 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=localhost:9092 <connecting> [unspecified None]>: creating new socket
+2025-09-11 13:57:02,898 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: setting socket option (6, 1, 1)
+2025-09-11 13:57:02,899 - INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-09-11 13:57:02,899 - DEBUG - Timeouts: user 200.000000, metadata inf, idle connection inf, request inf
+2025-09-11 13:57:02,899 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: established TCP connection
+2025-09-11 13:57:02,899 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: checking broker Api Versions
+2025-09-11 13:57:02,900 - DEBUG - Sending request ApiVersionsRequest_v4(client_software_name='kafka-python', client_software_version='2.2.15', _tagged_fields={})
+2025-09-11 13:57:02,900 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: Request 1 (timeout_ms 1000.0): ApiVersionsRequest_v4(client_software_name='kafka-python', client_software_version='2.2.15', _tagged_fields={})
+2025-09-11 13:57:02,901 - DEBUG - Timeouts: user 200.000000, metadata inf, idle connection inf, request 999.000072
+2025-09-11 13:57:02,902 - DEBUG - Received correlation id: 1
+2025-09-11 13:57:02,902 - DEBUG - Processing response ApiVersionsResponse_v4
+2025-09-11 13:57:02,903 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: Response 1 (2.999544143676758 ms): ApiVersionsResponse_v4(error_code=0, api_versions=[(api_key=0, min_version=0, max_version=11, _tagged_fields={}), (api_key=1, min_version=0, max_version=17, _tagged_fields={}), (api_key=2, min_version=0, max_version=9, _tagged_fields={}), (api_key=3, min_version=0, max_version=12, _tagged_fields={}), (api_key=8, min_version=0, max_version=9, _tagged_fields={}), (api_key=9, min_version=0, max_version=9, _tagged_fields={}), (api_key=10, min_version=0, max_version=6, _tagged_fields={}), (api_key=11, min_version=0, max_version=9, _tagged_fields={}), (api_key=12, min_version=0, max_version=4, _tagged_fields={}), (api_key=13, min_version=0, max_version=5, _tagged_fields={}), (api_key=14, min_version=0, max_version=5, _tagged_fields={}), (api_key=15, min_version=0, max_version=5, _tagged_fields={}), (api_key=16, min_version=0, max_version=5, _tagged_fields={}), (api_key=17, min_version=0, max_version=1, _tagged_fields={}), (api_key=18, min_version=0, max_version=4, _tagged_fields={}), (api_key=19, min_version=0, max_version=7, _tagged_fields={}), (api_key=20, min_version=0, max_version=6, _tagged_fields={}), (api_key=21, min_version=0, max_version=2, _tagged_fields={}), (api_key=22, min_version=0, max_version=5, _tagged_fields={}), (api_key=23, min_version=0, max_version=4, _tagged_fields={}), (api_key=24, min_version=0, max_version=5, _tagged_fields={}), (api_key=25, min_version=0, max_version=4, _tagged_fields={}), (api_key=26, min_version=0, max_version=4, _tagged_fields={}), (api_key=27, min_version=0, max_version=1, _tagged_fields={}), (api_key=28, min_version=0, max_version=4, _tagged_fields={}), (api_key=29, min_version=0, max_version=3, _tagged_fields={}), (api_key=30, min_version=0, max_version=3, _tagged_fields={}), (api_key=31, min_version=0, max_version=3, _tagged_fields={}), (api_key=32, min_version=0, max_version=4, _tagged_fields={}), (api_key=33, min_version=0, max_version=2, _tagged_fields={}), (api_key=34, min_version=0, max_version=2, _tagged_fields={}), (api_key=35, min_version=0, max_version=4, _tagged_fields={}), (api_key=36, min_version=0, max_version=2, _tagged_fields={}), (api_key=37, min_version=0, max_version=3, _tagged_fields={}), (api_key=38, min_version=0, max_version=3, _tagged_fields={}), (api_key=39, min_version=0, max_version=2, _tagged_fields={}), (api_key=40, min_version=0, max_version=2, _tagged_fields={}), (api_key=41, min_version=0, max_version=3, _tagged_fields={}), (api_key=42, min_version=0, max_version=2, _tagged_fields={}), (api_key=43, min_version=0, max_version=2, _tagged_fields={}), (api_key=44, min_version=0, max_version=1, _tagged_fields={}), (api_key=45, min_version=0, max_version=0, _tagged_fields={}), (api_key=46, min_version=0, max_version=0, _tagged_fields={}), (api_key=47, min_version=0, max_version=0, _tagged_fields={}), (api_key=48, min_version=0, max_version=1, _tagged_fields={}), (api_key=49, min_version=0, max_version=1, _tagged_fields={}), (api_key=50, min_version=0, max_version=0, _tagged_fields={}), (api_key=51, min_version=0, max_version=0, _tagged_fields={}), (api_key=55, min_version=0, max_version=2, _tagged_fields={}), (api_key=57, min_version=0, max_version=1, _tagged_fields={}), (api_key=60, min_version=0, max_version=1, _tagged_fields={}), (api_key=61, min_version=0, max_version=0, _tagged_fields={}), (api_key=64, min_version=0, max_version=0, _tagged_fields={}), (api_key=65, min_version=0, max_version=0, _tagged_fields={}), (api_key=66, min_version=0, max_version=1, _tagged_fields={}), (api_key=68, min_version=0, max_version=0, _tagged_fields={}), (api_key=69, min_version=0, max_version=0, _tagged_fields={}), (api_key=74, min_version=0, max_version=0, _tagged_fields={}), (api_key=75, min_version=0, max_version=0, _tagged_fields={}), (api_key=80, min_version=0, max_version=0, _tagged_fields={}), (api_key=81, min_version=0, max_version=0, _tagged_fields={})], throttle_time_ms=0, _tagged_fields={0: b'\x03\x0ekraft.version\x00\x00\x00\x01\x00\x11metadata.version\x00\x01\x00\x15\x00', 1: b'\x00\x00\x00\x00\x00\x00\x91.', 2: b'\x02\x11metadata.version\x00\x15\x00\x15\x00'})
+2025-09-11 13:57:02,903 - INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=localhost:9092 <checking_api_versions_recv> [IPv6 ('::1', 9092, 0, 0)]>: Broker version identified as 2.6
+2025-09-11 13:57:02,904 - INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-09-11 13:57:02,904 - DEBUG - Node bootstrap-0 connected
+2025-09-11 13:57:02,904 - DEBUG - Added sensor with name bytes-fetched
+2025-09-11 13:57:02,904 - DEBUG - Added sensor with name records-fetched
+2025-09-11 13:57:02,904 - DEBUG - Added sensor with name fetch-latency
+2025-09-11 13:57:02,904 - DEBUG - Added sensor with name records-lag
+2025-09-11 13:57:02,904 - DEBUG - Added sensor with name heartbeat-latency
+2025-09-11 13:57:02,904 - DEBUG - Added sensor with name join-latency
+2025-09-11 13:57:02,904 - DEBUG - Added sensor with name sync-latency
+2025-09-11 13:57:02,905 - DEBUG - Added sensor with name commit-latency
+2025-09-11 13:57:02,905 - INFO - Updating subscribed topics to: ('anjana_json_topic',)
+2025-09-11 13:57:02,905 - DEBUG - Sending metadata request MetadataRequest_v7(topics=['anjana_json_topic'], allow_auto_topic_creation=True) to node bootstrap-0
+2025-09-11 13:57:02,905 - DEBUG - Sending request MetadataRequest_v7(topics=['anjana_json_topic'], allow_auto_topic_creation=True)
+2025-09-11 13:57:02,906 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 2 (timeout_ms 305000): MetadataRequest_v7(topics=['anjana_json_topic'], allow_auto_topic_creation=True)
+2025-09-11 13:57:02,906 - DEBUG - Requesting metadata for group coordinator request: NoBrokersAvailable
+2025-09-11 13:57:02,906 - DEBUG - Timeouts: user inf, metadata 305000.000000, idle connection 539983.000000, request 305000.000000
+2025-09-11 13:57:02,907 - DEBUG - Received correlation id: 2
+2025-09-11 13:57:02,907 - DEBUG - Processing response MetadataResponse_v7
+2025-09-11 13:57:02,908 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 2 (2.000093460083008 ms): MetadataResponse_v7(throttle_time_ms=0, brokers=[(node_id=1, host='localhost', port=9092, rack=None)], cluster_id='Hd1Hmb7vSM2J7YUyp8I3Dw', controller_id=1, topics=[(error_code=0, topic='anjana_json_topic', is_internal=False, partitions=[(error_code=0, partition=0, leader=1, leader_epoch=0, replicas=[1], isr=[1], offline_replicas=[])])])
+2025-09-11 13:57:02,908 - DEBUG - Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 1, coordinators: 0)
+2025-09-11 13:57:02,908 - DEBUG - Initiating connection to node 1 at localhost:9092
+2025-09-11 13:57:02,908 - DEBUG - Added sensor with name node-1.bytes-sent
+2025-09-11 13:57:02,908 - DEBUG - Added sensor with name node-1.bytes-received
+2025-09-11 13:57:02,908 - DEBUG - Added sensor with name node-1.latency
+2025-09-11 13:57:02,908 - DEBUG - Added sensor with name node-1.throttle
+2025-09-11 13:57:02,909 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connecting> [unspecified None]>: creating new socket
+2025-09-11 13:57:02,909 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: setting socket option (6, 1, 1)
+2025-09-11 13:57:02,909 - INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-09-11 13:57:02,909 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: established TCP connection
+2025-09-11 13:57:02,910 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: checking broker Api Versions
+2025-09-11 13:57:02,910 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: Using pre-configured api_version (2, 6) for ApiVersions
+2025-09-11 13:57:02,910 - INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-09-11 13:57:02,910 - DEBUG - Node 1 connected
+2025-09-11 13:57:02,910 - INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-09-11 13:57:03,011 - DEBUG - Sending group coordinator request for group json-group-anjana to broker 1: FindCoordinatorRequest_v2(coordinator_key='json-group-anjana', coordinator_type=0)
+2025-09-11 13:57:03,011 - DEBUG - Sending request FindCoordinatorRequest_v2(coordinator_key='json-group-anjana', coordinator_type=0)
+2025-09-11 13:57:03,011 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 1 (timeout_ms 305000): FindCoordinatorRequest_v2(coordinator_key='json-group-anjana', coordinator_type=0)
+2025-09-11 13:57:03,011 - DEBUG - Timeouts: user inf, metadata 299896.642578, idle connection 539877.000000, request 305000.000000
+2025-09-11 13:57:03,012 - DEBUG - Timeouts: user inf, metadata 299895.772217, idle connection 539876.000000, request 304999.129534
+2025-09-11 13:57:03,013 - DEBUG - Received correlation id: 1
+2025-09-11 13:57:03,013 - DEBUG - Processing response FindCoordinatorResponse_v2
+2025-09-11 13:57:03,013 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 1 (2.1865367889404297 ms): FindCoordinatorResponse_v2(throttle_time_ms=0, error_code=0, error_message='NONE', coordinator_id=1, host='localhost', port=9092)
+2025-09-11 13:57:03,013 - DEBUG - Received group coordinator response FindCoordinatorResponse_v2(throttle_time_ms=0, error_code=0, error_message='NONE', coordinator_id=1, host='localhost', port=9092)
+2025-09-11 13:57:03,013 - DEBUG - Updating coordinator for group/json-group-anjana: FindCoordinatorResponse_v2(throttle_time_ms=0, error_code=0, error_message='NONE', coordinator_id=1, host='localhost', port=9092)
+2025-09-11 13:57:03,013 - INFO - Coordinator for group/json-group-anjana is BrokerMetadata(nodeId='coordinator-1', host='localhost', port=9092, rack=None)
+2025-09-11 13:57:03,013 - INFO - Discovered coordinator coordinator-1 for group json-group-anjana
+2025-09-11 13:57:03,013 - INFO - Starting new heartbeat thread
+2025-09-11 13:57:03,014 - DEBUG - Heartbeat thread started: <Heartbeat group_id=json-group-anjana heartbeat_interval_ms=3000 session_timeout_ms=10000 max_poll_interval_ms=300000 retry_backoff_ms=100>
+2025-09-11 13:57:03,014 - DEBUG - Started heartbeat thread 15204
+2025-09-11 13:57:03,014 - DEBUG - Heartbeat disabled. Waiting
+2025-09-11 13:57:03,015 - INFO - Revoking previously assigned partitions set() for group json-group-anjana
+2025-09-11 13:57:03,015 - DEBUG - Disabling heartbeat thread during join-group
+2025-09-11 13:57:03,015 - DEBUG - Disabling heartbeat thread
+2025-09-11 13:57:03,015 - INFO - Failed to join group json-group-anjana: NodeNotReadyError: coordinator-1
+2025-09-11 13:57:03,015 - DEBUG - Initiating connection to node coordinator-1 at localhost:9092
+2025-09-11 13:57:03,015 - DEBUG - Added sensor with name node-coordinator-1.bytes-sent
+2025-09-11 13:57:03,015 - DEBUG - Added sensor with name node-coordinator-1.bytes-received
+2025-09-11 13:57:03,015 - DEBUG - Added sensor with name node-coordinator-1.latency
+2025-09-11 13:57:03,015 - DEBUG - Added sensor with name node-coordinator-1.throttle
+2025-09-11 13:57:03,016 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connecting> [unspecified None]>: creating new socket
+2025-09-11 13:57:03,016 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: setting socket option (6, 1, 1)
+2025-09-11 13:57:03,016 - INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2025-09-11 13:57:03,016 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: established TCP connection
+2025-09-11 13:57:03,016 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: checking broker Api Versions
+2025-09-11 13:57:03,017 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <checking_api_versions_send> [IPv6 ('::1', 9092, 0, 0)]>: Using pre-configured api_version (2, 6) for ApiVersions
+2025-09-11 13:57:03,017 - INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2025-09-11 13:57:03,017 - DEBUG - Node coordinator-1 connected
+2025-09-11 13:57:03,118 - INFO - (Re-)joining group json-group-anjana
+2025-09-11 13:57:03,118 - DEBUG - Sending JoinGroup (JoinGroupRequest_v4(group='json-group-anjana', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x00')])) to coordinator coordinator-1
+2025-09-11 13:57:03,118 - DEBUG - Sending request JoinGroupRequest_v4(group='json-group-anjana', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x00')])
+2025-09-11 13:57:03,118 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 1 (timeout_ms 305000): JoinGroupRequest_v4(group='json-group-anjana', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x00')])
+2025-09-11 13:57:03,118 - DEBUG - Timeouts: user inf, metadata 299789.570312, idle connection 539770.000000, request 305000.000000
+2025-09-11 13:57:03,119 - DEBUG - Timeouts: user inf, metadata 299788.571045, idle connection 539769.000000, request 304999.000788
+2025-09-11 13:57:03,122 - DEBUG - Received correlation id: 1
+2025-09-11 13:57:03,122 - DEBUG - Processing response JoinGroupResponse_v4
+2025-09-11 13:57:03,122 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 1 (4.003286361694336 ms): JoinGroupResponse_v4(throttle_time_ms=0, error_code=79, generation_id=-1, group_protocol='', leader_id='', member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', members=[])
+2025-09-11 13:57:03,122 - DEBUG - Received JoinGroup response: JoinGroupResponse_v4(throttle_time_ms=0, error_code=79, generation_id=-1, group_protocol='', leader_id='', member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', members=[])
+2025-09-11 13:57:03,123 - INFO - Received member id kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b for group json-group-anjana; will retry join-group
+2025-09-11 13:57:03,123 - INFO - Failed to join group json-group-anjana: [Error 79] MemberIdRequiredError
+2025-09-11 13:57:03,123 - INFO - (Re-)joining group json-group-anjana
+2025-09-11 13:57:03,123 - DEBUG - Sending JoinGroup (JoinGroupRequest_v4(group='json-group-anjana', session_timeout=10000, rebalance_timeout=300000, member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x00')])) to coordinator coordinator-1
+2025-09-11 13:57:03,123 - DEBUG - Sending request JoinGroupRequest_v4(group='json-group-anjana', session_timeout=10000, rebalance_timeout=300000, member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x00')])
+2025-09-11 13:57:03,123 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 2 (timeout_ms 305000): JoinGroupRequest_v4(group='json-group-anjana', session_timeout=10000, rebalance_timeout=300000, member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x00')])
+2025-09-11 13:57:03,123 - DEBUG - Timeouts: user inf, metadata 299784.570312, idle connection 539765.000000, request 305000.000000
+2025-09-11 13:57:03,123 - DEBUG - Timeouts: user inf, metadata 299784.570312, idle connection 539765.000000, request 305000.000000
+2025-09-11 13:57:05,922 - DEBUG - Received correlation id: 2
+2025-09-11 13:57:05,922 - DEBUG - Processing response JoinGroupResponse_v4
+2025-09-11 13:57:05,922 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 2 (2798.567056655884 ms): JoinGroupResponse_v4(throttle_time_ms=0, error_code=0, generation_id=3, group_protocol='range', leader_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', members=[(member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x00')])
+2025-09-11 13:57:05,922 - DEBUG - Received JoinGroup response: JoinGroupResponse_v4(throttle_time_ms=0, error_code=0, generation_id=3, group_protocol='range', leader_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', members=[(member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x00')])
+2025-09-11 13:57:05,922 - INFO - Successfully joined group json-group-anjana <Generation 3 (member_id: kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b, protocol: range)>
+2025-09-11 13:57:05,922 - INFO - Elected group leader -- performing partition assignments using range
+2025-09-11 13:57:05,922 - DEBUG - Performing assignment for group json-group-anjana using strategy range with subscriptions {'kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b': ConsumerProtocolMemberMetadata(version=0, subscription=['anjana_json_topic'], user_data=b'')}
+2025-09-11 13:57:05,922 - DEBUG - Finished assignment for group json-group-anjana: {'kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b': ConsumerProtocolMemberAssignment(version=0, assignment=[(topic='anjana_json_topic', partitions=[0])], user_data=b'')}
+2025-09-11 13:57:05,922 - DEBUG - Sending leader SyncGroup for group json-group-anjana to coordinator coordinator-1: SyncGroupRequest_v2(group='json-group-anjana', generation_id=3, member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', group_assignment=[(member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')])
+2025-09-11 13:57:05,923 - DEBUG - Sending request SyncGroupRequest_v2(group='json-group-anjana', generation_id=3, member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', group_assignment=[(member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')])
+2025-09-11 13:57:05,923 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 3 (timeout_ms 305000): SyncGroupRequest_v2(group='json-group-anjana', generation_id=3, member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', group_assignment=[(member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')])
+2025-09-11 13:57:05,923 - DEBUG - Sending metadata request MetadataRequest_v7(topics=['anjana_json_topic'], allow_auto_topic_creation=True) to node 1
+2025-09-11 13:57:05,923 - DEBUG - Sending request MetadataRequest_v7(topics=['anjana_json_topic'], allow_auto_topic_creation=True)
+2025-09-11 13:57:05,923 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 2 (timeout_ms 305000): MetadataRequest_v7(topics=['anjana_json_topic'], allow_auto_topic_creation=True)
+2025-09-11 13:57:05,923 - DEBUG - Timeouts: user inf, metadata 305000.000000, idle connection 536965.000000, request 305000.000000
+2025-09-11 13:57:05,924 - DEBUG - Timeouts: user inf, metadata 305000.000000, idle connection 536965.000000, request 304999.023199
+2025-09-11 13:57:05,930 - DEBUG - Received correlation id: 2
+2025-09-11 13:57:05,930 - DEBUG - Processing response MetadataResponse_v7
+2025-09-11 13:57:05,930 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 2 (6.982326507568359 ms): MetadataResponse_v7(throttle_time_ms=0, brokers=[(node_id=1, host='localhost', port=9092, rack=None)], cluster_id='Hd1Hmb7vSM2J7YUyp8I3Dw', controller_id=1, topics=[(error_code=0, topic='anjana_json_topic', is_internal=False, partitions=[(error_code=0, partition=0, leader=1, leader_epoch=0, replicas=[1], isr=[1], offline_replicas=[])])])
+2025-09-11 13:57:05,930 - DEBUG - Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2025-09-11 13:57:05,930 - DEBUG - Timeouts: user inf, metadata 300000.000000, idle connection 536958.000000, request 304993.017673
+2025-09-11 13:57:05,933 - DEBUG - Received correlation id: 3
+2025-09-11 13:57:05,933 - DEBUG - Processing response SyncGroupResponse_v2
+2025-09-11 13:57:05,933 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 3 (9.991645812988281 ms): SyncGroupResponse_v2(throttle_time_ms=0, error_code=0, member_assignment=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')
+2025-09-11 13:57:05,933 - DEBUG - Received SyncGroup response: SyncGroupResponse_v2(throttle_time_ms=0, error_code=0, member_assignment=b'\x00\x00\x00\x00\x00\x01\x00\x11anjana_json_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')
+2025-09-11 13:57:05,933 - DEBUG - Enabling heartbeat thread
+2025-09-11 13:57:05,934 - INFO - Updated partition assignment: [TopicPartition(topic='anjana_json_topic', partition=0)]
+2025-09-11 13:57:05,934 - DEBUG - Heartbeat re-enabled.
+2025-09-11 13:57:05,934 - INFO - Setting newly assigned partitions {TopicPartition(topic='anjana_json_topic', partition=0)} for group json-group-anjana
+2025-09-11 13:57:05,934 - DEBUG - Timeouts: user 0.000000, metadata 299995.985596, idle connection 536954.000000, request inf
+2025-09-11 13:57:05,935 - DEBUG - Waiting 3.0 secs to send next heartbeat
+2025-09-11 13:57:05,935 - DEBUG - Group json-group-anjana fetching committed offsets for partitions: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:05,935 - DEBUG - Sending request OffsetFetchRequest_v5(consumer_group='json-group-anjana', topics=[(topic='anjana_json_topic', partitions=[0])])
+2025-09-11 13:57:05,935 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 4 (timeout_ms 305000): OffsetFetchRequest_v5(consumer_group='json-group-anjana', topics=[(topic='anjana_json_topic', partitions=[0])])
+2025-09-11 13:57:05,936 - DEBUG - Timeouts: user inf, metadata 299994.998535, idle connection 536953.000000, request 305000.000000
+2025-09-11 13:57:05,936 - DEBUG - Timeouts: user inf, metadata 299994.001221, idle connection 536952.000000, request 304999.002695
+2025-09-11 13:57:05,939 - DEBUG - Received correlation id: 4
+2025-09-11 13:57:05,940 - DEBUG - Processing response OffsetFetchResponse_v5
+2025-09-11 13:57:05,940 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 4 (4.997491836547852 ms): OffsetFetchResponse_v5(throttle_time_ms=0, topics=[(topic='anjana_json_topic', partitions=[(partition=0, offset=8, leader_epoch=-1, metadata='', error_code=0)])], error_code=0)
+2025-09-11 13:57:05,940 - DEBUG - Received OffsetFetchResponse: OffsetFetchResponse_v5(throttle_time_ms=0, topics=[(topic='anjana_json_topic', partitions=[(partition=0, offset=8, leader_epoch=-1, metadata='', error_code=0)])], error_code=0)
+2025-09-11 13:57:05,940 - DEBUG - Setting offset for partition TopicPartition(topic='anjana_json_topic', partition=0) to the committed offset 8
+2025-09-11 13:57:05,940 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:05,940 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:05,940 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 8
+2025-09-11 13:57:05,940 - DEBUG - Built full fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270CC3D5F00> for node 1 with 1 partition(s).
+2025-09-11 13:57:05,941 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:05,941 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=0, session_epoch=0, topics=[(topic='anjana_json_topic', partitions=[(partition=0, current_leader_epoch=-1, fetch_offset=8, log_start_offset=-1, max_bytes=1048576)])], forgotten_topics_data=[])
+2025-09-11 13:57:05,941 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 3 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=0, session_epoch=0, topics=[(topic='anjana_json_topic', partitions=[(partition=0, current_leader_epoch=-1, fetch_offset=8, log_start_offset=-1, max_bytes=1048576)])], forgotten_topics_data=[])
+2025-09-11 13:57:05,941 - DEBUG - Timeouts: user 0.000000, metadata 299989.002197, idle connection 536947.000000, request 305000.000000
+2025-09-11 13:57:05,941 - DEBUG - Timeouts: user 2993.000000, metadata 299989.002197, idle connection 536947.000000, request 305000.000000
+2025-09-11 13:57:05,944 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:05,944 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:05,944 - DEBUG - Skipping fetch for partition TopicPartition(topic='anjana_json_topic', partition=0) because there is a pending fetch request to node 1
+2025-09-11 13:57:05,944 - DEBUG - Timeouts: user 2990.000000, metadata 299985.999512, idle connection 536944.000000, request 304996.997356
+2025-09-11 13:57:05,944 - DEBUG - Received correlation id: 3
+2025-09-11 13:57:05,944 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:05,945 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 3 (4.001855850219727 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[(topics='anjana_json_topic', partitions=[(partition=0, error_code=0, highwater_offset=110, last_stable_offset=110, log_start_offset=0, aborted_transactions=NULL, records=b'\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00\x9b\x00\x00\x00\x00\x02}\x16\xb5n\x00\x00\x00\x00\x00\x00\x00\x00\x01\x999)\xe1s\x00\x00\x01\x999)\xe1s\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x00\x00\x00\x01\xd0\x01\x00\x00\x00\x01\xc2\x01{"message": "Nepal is home to M...')])])
+2025-09-11 13:57:05,945 - DEBUG - Node 1 sent a full fetch response that created a new incremental fetch session 649446068 with 1 response partitions
+2025-09-11 13:57:05,945 - DEBUG - Preparing to read 17628 bytes of data for partition TopicPartition(topic='anjana_json_topic', partition=0) with offset 8
+2025-09-11 13:57:05,945 - DEBUG - Returning fetched records at offset 8 for assigned partition TopicPartition(topic='anjana_json_topic', partition=0)
+2025-09-11 13:57:05,953 - DEBUG - Added sensor with name topic.anjana_json_topic.bytes-fetched
+2025-09-11 13:57:05,953 - DEBUG - Added sensor with name topic.anjana_json_topic.records-fetched
+2025-09-11 13:57:05,953 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:05,954 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:05,954 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:05,961 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:05,961 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:05,962 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:05,968 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:05,968 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:05,970 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:05,978 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:05,978 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:05,978 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:05,987 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:05,987 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:05,987 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:05,994 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:05,994 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:05,995 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,005 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,005 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,006 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,016 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,017 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,017 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,024 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,025 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,025 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,035 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,035 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,036 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,042 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,042 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,043 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,054 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,054 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,055 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,065 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,066 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,066 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,072 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,072 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,073 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,083 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,083 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,083 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,090 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,090 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,090 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,101 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,102 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,102 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,112 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,113 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,114 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,122 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,122 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,122 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,134 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,134 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,134 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,143 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,143 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,144 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,154 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,155 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,155 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,162 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,162 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,163 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,169 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,169 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,170 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,175 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,175 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,175 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,184 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,184 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,184 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,190 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,190 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,190 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,199 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,199 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,199 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,205 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,205 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,205 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,212 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,213 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,214 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,220 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,221 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,221 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,227 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,228 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,228 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,236 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,236 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,237 - DEBUG - Consumed JSON: {'message': 'Nepal has diverse geography, from the Himalayas to the Terai plains.', 'author': 'Anjana'}
+2025-09-11 13:57:06,242 - DEBUG - Consumed JSON: {'message': 'Nepal is home to Mount Everest, the highest peak in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,242 - DEBUG - Consumed JSON: {'message': 'Kathmandu Valley is rich with temples, stupas, and cultural heritage.', 'author': 'Anjana'}
+2025-09-11 13:57:06,242 - DEBUG - Consumed JSON: {'message': 'The flag of Nepal is the only non-rectangular national flag in the world.', 'author': 'Anjana'}
+2025-09-11 13:57:06,251 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:06,251 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:06,251 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:06,251 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:06,251 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD420> for node 1. Added set(), altered {TopicPartition(topic='anjana_json_topic', partition=0)}, removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:06,251 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:06,251 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=1, topics=[(topic='anjana_json_topic', partitions=[(partition=0, current_leader_epoch=-1, fetch_offset=110, log_start_offset=-1, max_bytes=1048576)])], forgotten_topics_data=[])
+2025-09-11 13:57:06,251 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 4 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=1, topics=[(topic='anjana_json_topic', partitions=[(partition=0, current_leader_epoch=-1, fetch_offset=110, log_start_offset=-1, max_bytes=1048576)])], forgotten_topics_data=[])
+2025-09-11 13:57:06,252 - DEBUG - Timeouts: user 0.000000, metadata 299678.206055, idle connection 536637.000000, request 304998.999834
+2025-09-11 13:57:06,252 - DEBUG - Timeouts: user 2681.000000, metadata 299677.205811, idle connection 536636.000000, request 304998.999834
+2025-09-11 13:57:06,716 - DEBUG - Received correlation id: 4
+2025-09-11 13:57:06,716 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:06,717 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 4 (465.76762199401855 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:06,717 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:06,717 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:06,717 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:06,717 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:06,717 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:06,717 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD210> for node 1. Added set(), altered set(), removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:06,717 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:06,717 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=2, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:06,717 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 5 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=2, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:06,717 - DEBUG - Timeouts: user 0.000000, metadata 299212.438477, idle connection 536171.000000, request 305000.000000
+2025-09-11 13:57:06,718 - DEBUG - Timeouts: user 2215.000000, metadata 299211.398926, idle connection 536170.000000, request 304998.960495
+2025-09-11 13:57:07,181 - DEBUG - Received correlation id: 5
+2025-09-11 13:57:07,181 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:07,181 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 5 (463.55390548706055 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:07,182 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:07,182 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:07,182 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:07,182 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:07,182 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:07,182 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD5A0> for node 1. Added set(), altered set(), removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:07,182 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:07,182 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=3, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:07,182 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 6 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=3, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:07,182 - DEBUG - Timeouts: user 0.000000, metadata 298747.853516, idle connection 535706.000000, request 305000.000000
+2025-09-11 13:57:07,183 - DEBUG - Timeouts: user 1750.000000, metadata 298746.868164, idle connection 535705.000000, request 304999.014616
+2025-09-11 13:57:07,645 - DEBUG - Received correlation id: 6
+2025-09-11 13:57:07,645 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:07,645 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 6 (463.67478370666504 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:07,645 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:07,645 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:07,645 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:07,645 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:07,645 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:07,645 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD420> for node 1. Added set(), altered set(), removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:07,645 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:07,645 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=4, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:07,645 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 7 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=4, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:07,646 - DEBUG - Timeouts: user 0.000000, metadata 298283.148193, idle connection 535242.000000, request 305000.000000
+2025-09-11 13:57:07,646 - DEBUG - Timeouts: user 1287.000000, metadata 298283.148193, idle connection 535242.000000, request 305000.000000
+2025-09-11 13:57:08,109 - DEBUG - Received correlation id: 7
+2025-09-11 13:57:08,110 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:08,110 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 7 (463.3471965789795 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:08,110 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:08,110 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:08,110 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:08,110 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:08,110 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:08,110 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD210> for node 1. Added set(), altered set(), removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:08,110 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:08,110 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=5, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:08,110 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 8 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=5, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:08,110 - DEBUG - Timeouts: user 0.000000, metadata 297819.801025, idle connection 534778.000000, request 305000.000000
+2025-09-11 13:57:08,111 - DEBUG - Timeouts: user 822.000000, metadata 297818.739746, idle connection 534777.000000, request 304998.938799
+2025-09-11 13:57:08,574 - DEBUG - Received correlation id: 8
+2025-09-11 13:57:08,574 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:08,574 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 8 (464.0367031097412 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:08,574 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:08,574 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:08,574 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:08,574 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:08,574 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:08,574 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD5A0> for node 1. Added set(), altered set(), removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:08,574 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:08,574 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=6, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:08,575 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 9 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=6, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:08,575 - DEBUG - Timeouts: user 0.000000, metadata 297354.732910, idle connection 534313.000000, request 305000.000000
+2025-09-11 13:57:08,575 - DEBUG - Timeouts: user 358.000000, metadata 297354.732910, idle connection 534313.000000, request 305000.000000
+2025-09-11 13:57:08,944 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:08,944 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:08,945 - DEBUG - Skipping fetch for partition TopicPartition(topic='anjana_json_topic', partition=0) because there is a pending fetch request to node 1
+2025-09-11 13:57:08,944 - DEBUG - Timeouts: user 0.000000, metadata 296985.079590, idle connection 533944.000000, request 304630.346775
+2025-09-11 13:57:08,945 - DEBUG - Sending heartbeat for group json-group-anjana <Generation 3 (member_id: kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b, protocol: range)>
+2025-09-11 13:57:08,945 - DEBUG - Sending HeartbeatRequest to coordinator-1: HeartbeatRequest_v2(group='json-group-anjana', generation_id=3, member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b')
+2025-09-11 13:57:08,945 - DEBUG - Sending request HeartbeatRequest_v2(group='json-group-anjana', generation_id=3, member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b')
+2025-09-11 13:57:08,945 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 5 (timeout_ms 305000): HeartbeatRequest_v2(group='json-group-anjana', generation_id=3, member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b')
+2025-09-11 13:57:08,946 - DEBUG - Timeouts: user 0.000000, metadata 296984.157471, idle connection 533943.000000, request 304629.424572
+2025-09-11 13:57:08,946 - DEBUG - Waiting 3.0 secs to send next heartbeat
+2025-09-11 13:57:08,946 - DEBUG - Timeouts: user 1988.000000, metadata 296983.104736, idle connection 533942.000000, request 304628.371954
+2025-09-11 13:57:08,947 - DEBUG - Received correlation id: 5
+2025-09-11 13:57:08,947 - DEBUG - Processing response HeartbeatResponse_v2
+2025-09-11 13:57:08,947 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 5 (2.0017623901367188 ms): HeartbeatResponse_v2(throttle_time_ms=0, error_code=0)
+2025-09-11 13:57:08,948 - DEBUG - Received heartbeat response for group json-group-anjana: HeartbeatResponse_v2(throttle_time_ms=0, error_code=0)
+2025-09-11 13:57:08,948 - DEBUG - Heartbeat success
+2025-09-11 13:57:08,948 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:08,948 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:08,948 - DEBUG - Skipping fetch for partition TopicPartition(topic='anjana_json_topic', partition=0) because there is a pending fetch request to node 1
+2025-09-11 13:57:08,948 - DEBUG - Timeouts: user 1985.000000, metadata 296981.155518, idle connection 533940.000000, request 304626.422644
+2025-09-11 13:57:09,038 - DEBUG - Received correlation id: 9
+2025-09-11 13:57:09,038 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:09,038 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 9 (462.932825088501 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:09,038 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:09,038 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:09,039 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:09,039 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:09,039 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:09,039 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD5D0> for node 1. Added set(), altered set(), removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:09,039 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:09,039 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=7, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:09,039 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 10 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=7, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:09,039 - DEBUG - Timeouts: user 0.000000, metadata 296890.823730, idle connection 533849.000000, request 305000.000000
+2025-09-11 13:57:09,039 - DEBUG - Timeouts: user 1894.000000, metadata 296890.823730, idle connection 533849.000000, request 305000.000000
+2025-09-11 13:57:09,502 - DEBUG - Received correlation id: 10
+2025-09-11 13:57:09,502 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:09,503 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 10 (463.03820610046387 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:09,503 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:09,503 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:09,503 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:09,503 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:09,503 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:09,503 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD540> for node 1. Added set(), altered set(), removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:09,503 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:09,503 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=8, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:09,503 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 11 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=8, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:09,503 - DEBUG - Timeouts: user 0.000000, metadata 296426.738525, idle connection 533385.000000, request 305000.000000
+2025-09-11 13:57:09,504 - DEBUG - Timeouts: user 1429.000000, metadata 296425.718994, idle connection 533384.000000, request 304998.980522
+2025-09-11 13:57:09,966 - DEBUG - Received correlation id: 11
+2025-09-11 13:57:09,966 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:09,966 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 11 (463.395357131958 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:09,966 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:09,966 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:09,966 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:09,966 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:09,966 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:09,966 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD5A0> for node 1. Added set(), altered set(), removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:09,966 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:09,966 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=9, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:09,966 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 12 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=9, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:09,967 - DEBUG - Timeouts: user 0.000000, metadata 295962.312988, idle connection 532921.000000, request 305000.000000
+2025-09-11 13:57:09,967 - DEBUG - Timeouts: user 966.000000, metadata 295962.312988, idle connection 532921.000000, request 305000.000000
+2025-09-11 13:57:10,430 - DEBUG - Received correlation id: 12
+2025-09-11 13:57:10,430 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:10,430 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 12 (462.984561920166 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:10,430 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:10,430 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:10,430 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:10,430 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:10,430 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:10,430 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD5D0> for node 1. Added set(), altered set(), removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:10,430 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:10,430 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=10, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:10,430 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 13 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=10, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:10,431 - DEBUG - Timeouts: user 0.000000, metadata 295498.297607, idle connection 532457.000000, request 305000.000000
+2025-09-11 13:57:10,431 - DEBUG - Timeouts: user 502.000000, metadata 295498.297607, idle connection 532457.000000, request 305000.000000
+2025-09-11 13:57:10,895 - DEBUG - Received correlation id: 13
+2025-09-11 13:57:10,895 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:10,895 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 13 (463.51146697998047 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:10,895 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:10,895 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:10,895 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:10,895 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:10,895 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:10,895 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD540> for node 1. Added set(), altered set(), removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:10,896 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:10,896 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=11, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:10,896 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 14 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=11, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:10,896 - DEBUG - Timeouts: user 0.000000, metadata 295033.774170, idle connection 531992.000000, request 305000.000000
+2025-09-11 13:57:10,896 - DEBUG - Timeouts: user 37.000000, metadata 295033.774170, idle connection 531992.000000, request 305000.000000
+2025-09-11 13:57:10,947 - DEBUG - Sending offset-commit request with {TopicPartition(topic='anjana_json_topic', partition=0): OffsetAndMetadata(offset=110, metadata='', leader_epoch=-1)} for group json-group-anjana to coordinator-1
+2025-09-11 13:57:10,947 - DEBUG - Sending request OffsetCommitRequest_v6(consumer_group='json-group-anjana', consumer_group_generation_id=3, consumer_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', topics=[(topic='anjana_json_topic', partitions=[(partition=0, offset=110, leader_epoch=-1, metadata='')])])
+2025-09-11 13:57:10,947 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 6 (timeout_ms 305000): OffsetCommitRequest_v6(consumer_group='json-group-anjana', consumer_group_generation_id=3, consumer_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', topics=[(topic='anjana_json_topic', partitions=[(partition=0, offset=110, leader_epoch=-1, metadata='')])])
+2025-09-11 13:57:10,947 - DEBUG - Timeouts: user 0.000000, metadata 294982.726807, idle connection 531941.000000, request 304948.952675
+2025-09-11 13:57:10,948 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:10,948 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:10,948 - DEBUG - Skipping fetch for partition TopicPartition(topic='anjana_json_topic', partition=0) because there is a pending fetch request to node 1
+2025-09-11 13:57:10,948 - DEBUG - Timeouts: user 997.000000, metadata 294981.672852, idle connection 531940.000000, request 304947.898626
+2025-09-11 13:57:10,950 - DEBUG - Received correlation id: 6
+2025-09-11 13:57:10,950 - DEBUG - Processing response OffsetCommitResponse_v6
+2025-09-11 13:57:10,950 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 6 (2.8662681579589844 ms): OffsetCommitResponse_v6(throttle_time_ms=0, topics=[(topic='anjana_json_topic', partitions=[(partition=0, error_code=0)])])
+2025-09-11 13:57:10,950 - DEBUG - Received OffsetCommitResponse: OffsetCommitResponse_v6(throttle_time_ms=0, topics=[(topic='anjana_json_topic', partitions=[(partition=0, error_code=0)])])
+2025-09-11 13:57:10,950 - DEBUG - Group json-group-anjana committed offset OffsetAndMetadata(offset=110, metadata='', leader_epoch=-1) for partition TopicPartition(topic='anjana_json_topic', partition=0)
+2025-09-11 13:57:10,950 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:10,950 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:10,950 - DEBUG - Skipping fetch for partition TopicPartition(topic='anjana_json_topic', partition=0) because there is a pending fetch request to node 1
+2025-09-11 13:57:10,950 - DEBUG - Timeouts: user 995.000000, metadata 294979.860596, idle connection 531938.000000, request 304946.086407
+2025-09-11 13:57:11,359 - DEBUG - Received correlation id: 14
+2025-09-11 13:57:11,359 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:11,359 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 14 (463.65904808044434 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:11,359 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:11,359 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:11,359 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:11,359 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:11,359 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:11,360 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD8A0> for node 1. Added set(), altered set(), removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:11,360 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:11,360 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=12, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:11,360 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 15 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=12, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:11,360 - DEBUG - Timeouts: user 0.000000, metadata 294569.078613, idle connection 531528.000000, request 305000.000000
+2025-09-11 13:57:11,360 - DEBUG - Timeouts: user 584.000000, metadata 294569.078613, idle connection 531528.000000, request 305000.000000
+2025-09-11 13:57:11,823 - DEBUG - Received correlation id: 15
+2025-09-11 13:57:11,823 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:11,823 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 15 (462.2371196746826 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:11,823 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:11,824 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:11,824 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:11,824 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:11,824 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:11,824 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD780> for node 1. Added set(), altered set(), removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:11,824 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:11,824 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=13, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:11,824 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 16 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=13, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:11,824 - DEBUG - Timeouts: user 0.000000, metadata 294105.858398, idle connection 531064.000000, request 305000.000000
+2025-09-11 13:57:11,824 - DEBUG - Timeouts: user 121.000000, metadata 294105.858398, idle connection 531064.000000, request 305000.000000
+2025-09-11 13:57:11,961 - DEBUG - Timeouts: user 0.000000, metadata 293968.511475, idle connection 530927.000000, request 304862.653017
+2025-09-11 13:57:11,961 - DEBUG - Sending heartbeat for group json-group-anjana <Generation 3 (member_id: kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b, protocol: range)>
+2025-09-11 13:57:11,961 - DEBUG - Sending HeartbeatRequest to coordinator-1: HeartbeatRequest_v2(group='json-group-anjana', generation_id=3, member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b')
+2025-09-11 13:57:11,961 - DEBUG - Sending request HeartbeatRequest_v2(group='json-group-anjana', generation_id=3, member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b')
+2025-09-11 13:57:11,961 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 7 (timeout_ms 305000): HeartbeatRequest_v2(group='json-group-anjana', generation_id=3, member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b')
+2025-09-11 13:57:11,962 - DEBUG - Timeouts: user 0.000000, metadata 293967.453857, idle connection 530926.000000, request 304861.595392
+2025-09-11 13:57:11,962 - DEBUG - Waiting 3.0 secs to send next heartbeat
+2025-09-11 13:57:11,962 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:11,962 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:11,962 - DEBUG - Skipping fetch for partition TopicPartition(topic='anjana_json_topic', partition=0) because there is a pending fetch request to node 1
+2025-09-11 13:57:11,962 - DEBUG - Timeouts: user 2998.000000, metadata 293967.453857, idle connection 530926.000000, request 304861.595392
+2025-09-11 13:57:11,963 - DEBUG - Received correlation id: 7
+2025-09-11 13:57:11,963 - DEBUG - Processing response HeartbeatResponse_v2
+2025-09-11 13:57:11,963 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 7 (2.0487308502197266 ms): HeartbeatResponse_v2(throttle_time_ms=0, error_code=0)
+2025-09-11 13:57:11,963 - DEBUG - Received heartbeat response for group json-group-anjana: HeartbeatResponse_v2(throttle_time_ms=0, error_code=0)
+2025-09-11 13:57:11,963 - DEBUG - Heartbeat success
+2025-09-11 13:57:11,964 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:11,964 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:11,964 - DEBUG - Skipping fetch for partition TopicPartition(topic='anjana_json_topic', partition=0) because there is a pending fetch request to node 1
+2025-09-11 13:57:11,964 - DEBUG - Timeouts: user 2996.000000, metadata 293965.478271, idle connection 530924.000000, request 304859.619856
+2025-09-11 13:57:12,287 - DEBUG - Received correlation id: 16
+2025-09-11 13:57:12,287 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:12,287 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 16 (463.1211757659912 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:12,287 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:12,287 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:12,287 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:12,287 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:12,287 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:12,287 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD870> for node 1. Added set(), altered set(), removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:12,287 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:12,287 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=14, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:12,287 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 17 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=14, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:12,288 - DEBUG - Timeouts: user 0.000000, metadata 293641.707520, idle connection 530600.000000, request 305000.000000
+2025-09-11 13:57:12,288 - DEBUG - Timeouts: user 2673.000000, metadata 293641.707520, idle connection 530600.000000, request 305000.000000
+2025-09-11 13:57:12,751 - DEBUG - Received correlation id: 17
+2025-09-11 13:57:12,751 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:12,751 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 17 (463.4661674499512 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:12,751 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:12,751 - DEBUG - poll: fetched records: {}, False
+2025-09-11 13:57:12,752 - DEBUG - poll: Sending fetches
+2025-09-11 13:57:12,752 - DEBUG - Adding fetch request for partition TopicPartition(topic='anjana_json_topic', partition=0) at offset 110
+2025-09-11 13:57:12,752 - DEBUG - Building incremental partitions from next: {TopicPartition(topic='anjana_json_topic', partition=0)}, previous: {TopicPartition(topic='anjana_json_topic', partition=0)}
+2025-09-11 13:57:12,752 - DEBUG - Built incremental fetch <kafka.consumer.fetcher.FetchMetadata object at 0x00000270D4FBD6C0> for node 1. Added set(), altered set(), removed set() out of odict_keys([TopicPartition(topic='anjana_json_topic', partition=0)])
+2025-09-11 13:57:12,752 - DEBUG - Sending FetchRequest to node 1
+2025-09-11 13:57:12,752 - DEBUG - Sending request FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=15, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:12,752 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 18 (timeout_ms 305000): FetchRequest_v10(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, session_id=649446068, session_epoch=15, topics=[], forgotten_topics_data=[])
+2025-09-11 13:57:12,752 - DEBUG - Timeouts: user 0.000000, metadata 293177.243896, idle connection 530136.000000, request 305000.000000
+2025-09-11 13:57:12,752 - DEBUG - Timeouts: user 2208.000000, metadata 293177.243896, idle connection 530136.000000, request 305000.000000
+2025-09-11 13:57:13,219 - WARNING - Consumer interrupted by user.
+2025-09-11 13:57:13,219 - DEBUG - Closing the KafkaConsumer.
+2025-09-11 13:57:13,219 - DEBUG - Sending offset-commit request with {TopicPartition(topic='anjana_json_topic', partition=0): OffsetAndMetadata(offset=110, metadata='', leader_epoch=-1)} for group json-group-anjana to coordinator-1
+2025-09-11 13:57:13,219 - DEBUG - Sending request OffsetCommitRequest_v6(consumer_group='json-group-anjana', consumer_group_generation_id=3, consumer_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', topics=[(topic='anjana_json_topic', partitions=[(partition=0, offset=110, leader_epoch=-1, metadata='')])])
+2025-09-11 13:57:13,219 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 8 (timeout_ms 305000): OffsetCommitRequest_v6(consumer_group='json-group-anjana', consumer_group_generation_id=3, consumer_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b', topics=[(topic='anjana_json_topic', partitions=[(partition=0, offset=110, leader_epoch=-1, metadata='')])])
+2025-09-11 13:57:13,219 - DEBUG - Timeouts: user 305000.000000, metadata 292710.755615, idle connection 529669.000000, request 304533.511877
+2025-09-11 13:57:13,220 - DEBUG - Received correlation id: 18
+2025-09-11 13:57:13,220 - DEBUG - Processing response FetchResponse_v10
+2025-09-11 13:57:13,220 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 18 (467.5757884979248 ms): FetchResponse_v10(throttle_time_ms=0, error_code=0, session_id=649446068, topics=[])
+2025-09-11 13:57:13,220 - DEBUG - Node 1 sent an incremental fetch response for session 649446068 with 0 response partitions (1 implied)
+2025-09-11 13:57:13,220 - DEBUG - Timeouts: user 305000.000000, metadata 292709.667969, idle connection 529668.000000, request 304998.912334
+2025-09-11 13:57:13,221 - DEBUG - Received correlation id: 8
+2025-09-11 13:57:13,221 - DEBUG - Processing response OffsetCommitResponse_v6
+2025-09-11 13:57:13,221 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 8 (2.040386199951172 ms): OffsetCommitResponse_v6(throttle_time_ms=0, topics=[(topic='anjana_json_topic', partitions=[(partition=0, error_code=0)])])
+2025-09-11 13:57:13,222 - DEBUG - Received OffsetCommitResponse: OffsetCommitResponse_v6(throttle_time_ms=0, topics=[(topic='anjana_json_topic', partitions=[(partition=0, error_code=0)])])
+2025-09-11 13:57:13,222 - DEBUG - Group json-group-anjana committed offset OffsetAndMetadata(offset=110, metadata='', leader_epoch=-1) for partition TopicPartition(topic='anjana_json_topic', partition=0)
+2025-09-11 13:57:13,222 - INFO - Stopping heartbeat thread
+2025-09-11 13:57:13,222 - DEBUG - Heartbeat thread closed
+2025-09-11 13:57:13,222 - INFO - Leaving consumer group (json-group-anjana).
+2025-09-11 13:57:13,222 - DEBUG - Sending LeaveGroupRequest to coordinator-1: LeaveGroupRequest_v2(group='json-group-anjana', member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b')
+2025-09-11 13:57:13,222 - DEBUG - Sending request LeaveGroupRequest_v2(group='json-group-anjana', member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b')
+2025-09-11 13:57:13,222 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Request 9 (timeout_ms 305000): LeaveGroupRequest_v2(group='json-group-anjana', member_id='kafka-python-2.2.15-dac336dd-b9a7-412f-82e1-4bb896ba279b')
+2025-09-11 13:57:13,222 - DEBUG - Timeouts: user 305000.000000, metadata 292707.690430, idle connection 529666.000000, request 305000.000000
+2025-09-11 13:57:13,223 - DEBUG - Timeouts: user 305000.000000, metadata 292706.687744, idle connection 529665.000000, request 304998.997450
+2025-09-11 13:57:13,225 - DEBUG - Received correlation id: 9
+2025-09-11 13:57:13,225 - DEBUG - Processing response LeaveGroupResponse_v2
+2025-09-11 13:57:13,226 - DEBUG - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Response 9 (3.9708614349365234 ms): LeaveGroupResponse_v2(throttle_time_ms=0, error_code=0)
+2025-09-11 13:57:13,226 - DEBUG - Received LeaveGroupResponse: LeaveGroupResponse_v2(throttle_time_ms=0, error_code=0)
+2025-09-11 13:57:13,226 - INFO - LeaveGroup request for group json-group-anjana returned successfully
+2025-09-11 13:57:13,226 - INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-09-11 13:57:13,226 - INFO - <BrokerConnection client_id=kafka-python-2.2.15, node_id=coordinator-1 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2025-09-11 13:57:13,227 - DEBUG - The KafkaConsumer has closed.
+2025-09-11 13:57:13,228 - INFO - Kafka consumer closed.

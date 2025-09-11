@@ -324,3 +324,93 @@
 2025-09-11 09:26:02.219 | INFO     | __main__:get_rolling_window_size:67 - Rolling window size: 10
 2025-09-11 09:26:06.875 | WARNING  | __main__:main:184 - Consumer interrupted by user.
 2025-09-11 09:26:06.884 | INFO     | __main__:main:189 - Kafka consumer for topic 'smoker_csv' closed.
+2025-09-11 09:37:44.048 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-11 09:37:44.053 | INFO     | __main__:<module>:68 - Project root: C:\Users\AnjanaD\Documents\buzzline-03-anjana
+2025-09-11 09:37:44.054 | INFO     | __main__:<module>:72 - Data folder: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data
+2025-09-11 09:37:44.055 | INFO     | __main__:<module>:76 - Data file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz.json
+2025-09-11 09:37:44.055 | INFO     | __main__:main:136 - START producer.
+2025-09-11 09:37:44.055 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-09-11 09:37:44.068 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-09-11 09:37:44.069 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-11 09:37:44.122 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'Hd1Hmb7vSM2J7YUyp8I3Dw', 'controller_id': 1}
+2025-09-11 09:37:44.125 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-09-11 09:37:44.126 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-09-11 09:37:44.126 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-11 09:37:44.128 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-09-11 09:37:44.144 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-09-11 09:37:44.151 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-11 09:37:44.185 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-09-11 09:37:44.186 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-11 09:37:44.313 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-09-11 09:37:44.320 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-09-11 09:37:44.322 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-09-11 09:37:44.323 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz.json
+2025-09-11 09:37:44.324 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz.json
+2025-09-11 09:37:44.343 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-09-11 09:37:45.347 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-09-11 09:37:46.349 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-09-11 09:37:46.558 | WARNING  | __main__:main:173 - Producer interrupted by user.
+2025-09-11 09:37:46.559 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-09-11 09:37:46.560 | INFO     | __main__:main:180 - END producer.
+2025-09-11 09:50:46.309 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-11 09:50:46.313 | INFO     | __main__:<module>:65 - Project root: C:\Users\AnjanaD\Documents\buzzline-03-anjana
+2025-09-11 09:50:46.314 | INFO     | __main__:<module>:68 - Data folder: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data
+2025-09-11 09:50:46.315 | INFO     | __main__:<module>:71 - Data file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz_nepal.json
+2025-09-11 09:50:46.315 | INFO     | __main__:main:116 - START producer.
+2025-09-11 09:50:46.316 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-09-11 09:50:46.327 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-09-11 09:50:46.327 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-11 09:50:46.361 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'Hd1Hmb7vSM2J7YUyp8I3Dw', 'controller_id': 1}
+2025-09-11 09:50:46.362 | INFO     | __main__:get_kafka_topic:49 - Kafka topic: buzzline_json
+2025-09-11 09:50:46.363 | INFO     | __main__:get_message_interval:56 - Message interval: 1 seconds
+2025-09-11 09:50:46.364 | ERROR    | __main__:main:123 - Data file not found: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz_nepal.json. Exiting.
+2025-09-11 09:53:36.930 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-11 09:53:36.935 | INFO     | __main__:<module>:65 - Project root: C:\Users\AnjanaD\Documents\buzzline-03-anjana
+2025-09-11 09:53:36.937 | INFO     | __main__:<module>:68 - Data folder: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data
+2025-09-11 09:53:36.941 | INFO     | __main__:<module>:71 - Data file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz_nepal.json
+2025-09-11 09:53:36.948 | INFO     | __main__:main:109 - START producer.
+2025-09-11 09:53:36.951 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-09-11 09:53:36.983 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-09-11 09:53:36.988 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-11 09:53:37.037 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'Hd1Hmb7vSM2J7YUyp8I3Dw', 'controller_id': 1}
+2025-09-11 09:53:37.039 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-09-11 09:53:37.046 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-09-11 09:53:37.047 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-11 09:53:37.048 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-09-11 09:53:37.057 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-09-11 09:53:37.058 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-11 09:53:37.088 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-09-11 09:53:37.088 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-11 09:53:37.123 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-09-11 09:53:37.128 | INFO     | __main__:main:124 - Kafka topic 'buzzline_json' is ready.
+2025-09-11 09:53:37.132 | INFO     | __main__:main:129 - Starting message production to topic 'buzzline_json'...
+2025-09-11 09:53:37.133 | ERROR    | __main__:generate_messages:85 - Data file not found: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz_nepal.json. Exiting.
+2025-09-11 09:53:37.134 | INFO     | __main__:main:141 - Kafka producer closed.
+2025-09-11 09:58:22.841 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-09-11 09:58:22.850 | INFO     | __main__:<module>:68 - Project root: C:\Users\AnjanaD\Documents\buzzline-03-anjana
+2025-09-11 09:58:22.851 | INFO     | __main__:<module>:72 - Data folder: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data
+2025-09-11 09:58:22.851 | INFO     | __main__:<module>:76 - Data file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz.json
+2025-09-11 09:58:22.852 | INFO     | __main__:main:136 - START producer.
+2025-09-11 09:58:22.852 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-09-11 09:58:22.865 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-09-11 09:58:22.868 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-11 09:58:22.913 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'Hd1Hmb7vSM2J7YUyp8I3Dw', 'controller_id': 1}
+2025-09-11 09:58:22.917 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-09-11 09:58:22.919 | INFO     | __main__:get_message_interval:57 - Message interval: 1 seconds
+2025-09-11 09:58:22.919 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-11 09:58:22.920 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-09-11 09:58:22.935 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-09-11 09:58:22.938 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-11 09:58:22.977 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-09-11 09:58:22.980 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-09-11 09:58:23.020 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-09-11 09:58:23.022 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-09-11 09:58:23.022 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-09-11 09:58:23.023 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz.json
+2025-09-11 09:58:23.024 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\AnjanaD\Documents\buzzline-03-anjana\data\buzz.json
+2025-09-11 09:58:23.056 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Data engineering is my passion.', 'author': 'Eve'}
+2025-09-11 09:58:24.058 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Distributed systems are fascinating.', 'author': 'Alice'}
+2025-09-11 09:58:25.061 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'message': 'Have a great day!', 'author': 'Charlie'}
+2025-09-11 09:58:25.934 | WARNING  | __main__:main:173 - Producer interrupted by user.
+2025-09-11 09:58:25.936 | INFO     | __main__:main:178 - Kafka producer closed.
+2025-09-11 09:58:25.937 | INFO     | __main__:main:180 - END producer.
