@@ -1,7 +1,7 @@
 """
 csv_producer_anjana.py
 
-Continuously stream CSV-like data (timestamp + temperature) to a Kafka topic using pandas.
+continuous stream CSV-like data (timestamp + temperature) to a Kafka topic using pandas.
 """
 
 #####################################
