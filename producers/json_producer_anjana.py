@@ -1,5 +1,5 @@
 """
-json_producer_anjana_loop.py
+json_producer_anjana.py
 
 Continuously stream JSON messages about Nepal to a Kafka topic.
 """
