@@ -1,158 +1,83 @@
 """
-json_consumer_case.py
+json_consumer_anjana_loop.py
 
-Consume json messages from a Kafka topic and process them.
-
-JSON is a set of key:value pairs. 
-
-Example serialized Kafka message
-"{\"message\": \"I love Python!\", \"author\": \"Eve\"}"
-
-Example JSON message (after deserialization) to be analyzed
-{"message": "I love Python!", "author": "Eve"}
-
+Continuously consumes JSON messages about Nepal from Kafka and performs real-time alerts.
 """
 
 #####################################
 # Import Modules
 #####################################
 
-# Import packages from Python Standard Library
-import os
-import json  # handle JSON parsing
-from collections import defaultdict  # data structure for counting author occurrences
-
-# Import external packages
-from dotenv import load_dotenv
-
-# Import functions from local modules
-from utils.utils_consumer import create_kafka_consumer
-from utils.utils_logger import logger
+import json
+import logging
+from kafka import KafkaConsumer
+import pandas as pd
 
 #####################################
-# Load Environment Variables
+# Logger Setup
 #####################################
 
-load_dotenv()
+logging.basicConfig(
+    level=logging.DEBUG,
+    filename="json_consumer_anjana_loop.log",
+    filemode="w",
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+logger = logging.getLogger(__name__)
 
 #####################################
-# Getter Functions for .env Variables
+# Kafka Configuration
 #####################################
 
-
-def get_kafka_topic() -> str:
-    """Fetch Kafka topic from environment or use default."""
-    topic = os.getenv("BUZZ_TOPIC", "unknown_topic")
-    logger.info(f"Kafka topic: {topic}")
-    return topic
-
-
-def get_kafka_consumer_group_id() -> int:
-    """Fetch Kafka consumer group id from environment or use default."""
-    group_id: str = os.getenv("BUZZ_CONSUMER_GROUP_ID", "default_group")
-    logger.info(f"Kafka consumer group id: {group_id}")
-    return group_id
-
+KAFKA_BOOTSTRAP_SERVERS = 'localhost:9092'
+KAFKA_TOPIC = 'anjana_json_topic'  # Must match the producer topic
+GROUP_ID = 'json-group-anjana-loop'
 
 #####################################
-# Set up Data Store to hold author counts
+# Create Kafka Consumer
 #####################################
 
-# Initialize a dictionary to store author counts
-# The defaultdict type initializes counts to 0
-# pass in the int function as the default_factory
-# to ensure counts are integers
-# {author: count} author is the key and count is the value
-author_counts = defaultdict(int)
+consumer = KafkaConsumer(
+    KAFKA_TOPIC,
+    bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS,
+    auto_offset_reset='earliest',
+    enable_auto_commit=True,
+    group_id=GROUP_ID,
+    value_deserializer=lambda m: json.loads(m.decode('utf-8'))
+)
 
-
-#####################################
-# Function to process a single message
-# #####################################
-
-
-def process_message(message: str) -> None:
-    """
-    Process a single JSON message from Kafka.
-
-    Args:
-        message (str): The JSON message as a string.
-    """
-    try:
-        # Log the raw message for debugging
-        logger.debug(f"Raw message: {message}")
-
-        # Parse the JSON string into a Python dictionary
-        message_dict: dict = json.loads(message)
-
-        # Ensure the processed JSON is logged for debugging
-        logger.info(f"Processed JSON message: {message_dict}")
-
-        # Ensure it's a dictionary before accessing fields
-        if isinstance(message_dict, dict):
-            # Extract the 'author' field from the Python dictionary
-            author = message_dict.get("author", "unknown")
-            logger.info(f"Message received from author: {author}")
-
-            # Increment the count for the author
-            author_counts[author] += 1
-
-            # Log the updated counts
-            logger.info(f"Updated author counts: {dict(author_counts)}")
-        else:
-            logger.error(f"Expected a dictionary but got: {type(message_dict)}")
-
-    except json.JSONDecodeError:
-        logger.error(f"Invalid JSON message: {message}")
-    except Exception as e:
-        logger.error(f"Error processing message: {e}")
-
+print(f"Listening for messages on topic '{KAFKA_TOPIC}' continuously...")
 
 #####################################
-# Define main function for this module
+# Consume Messages in Loop
 #####################################
 
+messages = []
 
-def main() -> None:
-    """
-    Main entry point for the consumer.
+try:
+    for message in consumer:
+        record = message.value
+        logger.debug(f"Consumed JSON: {record}")
+        messages.append(record)
 
-    - Reads the Kafka topic name and consumer group ID from environment variables.
-    - Creates a Kafka consumer using the `create_kafka_consumer` utility.
-    - Performs analytics on messages from the Kafka topic.
-    """
-    logger.info("START consumer.")
+        # Real-time alert for Nepal messages
+        if "Nepal" in record["message"]:
+            print(f"🌏 ALERT: Nepal mentioned -> {record['message']}")
 
-    # fetch .env content
-    topic = get_kafka_topic()
-    group_id = get_kafka_consumer_group_id()
-    logger.info(f"Consumer: Topic '{topic}' and group '{group_id}'...")
+        # Show DataFrame every 3 messages
+        if len(messages) % 3 == 0:
+            df = pd.DataFrame(messages)
+            print("\nCurrent batch of messages:\n", df)
 
-    # Create the Kafka consumer using the helpful utility function.
-    consumer = create_kafka_consumer(topic, group_id)
+except KeyboardInterrupt:
+    print("Consumer interrupted by user.")
+    logger.warning("Consumer interrupted by user.")
 
-    # Poll and process messages
-    logger.info(f"Polling messages from topic '{topic}'...")
-    try:
-        for message in consumer:
-            message_str = message.value
-            logger.debug(f"Received message at offset {message.offset}: {message_str}")
-            process_message(message_str)
-    except KeyboardInterrupt:
-        logger.warning("Consumer interrupted by user.")
-    except Exception as e:
-        logger.error(f"Error while consuming messages: {e}")
-    finally:
-        consumer.close()
-        logger.info(f"Kafka consumer for topic '{topic}' closed.")
+except Exception as e:
+    logger.error(f"Unexpected error in consumer: {e}")
+    print(f"Error: {e}")
 
-    logger.info(f"END consumer for topic '{topic}' and group '{group_id}'.")
-
-
-#####################################
-# Conditional Execution
-#####################################
-
-# Ensures this script runs only when executed directly (not when imported as a module).
-if __name__ == "__main__":
-    main()
+finally:
+    consumer.close()
+    print("Consumer closed.")
+    logger.info("Kafka consumer closed.")
